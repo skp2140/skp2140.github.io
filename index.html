@@ -71,6 +71,10 @@ I have broad interests across all areas of cryptography, with my doctoral resear
       max-width: 1200px;
       margin: 0 auto;
     }
+    .timeline-section {
+  padding-left: 40px;
+  padding-right: 40px;
+}
     .timeline-item {
       padding: 10px 40px;
       position: relative;
@@ -98,11 +102,12 @@ I have broad interests across all areas of cryptography, with my doctoral resear
       font-size: 16px;
     }
     .timeline-line {
-      position: absolute;
+	    display: none !important;
+      /*position: absolute;
       width: 2px;
       background-color: #000;
       left: 15%;
-      margin-left: -1px;
+      margin-left: -1px;*/
     }
     .line-top {
       top: 200px; /* Starting the line after the heading */
@@ -114,6 +119,7 @@ I have broad interests across all areas of cryptography, with my doctoral resear
     }
     .section-title h1 {
       text-align: left;
+      padding-left: 40px;
       margin-bottom: 20px;
     }
     h3 {
@@ -123,146 +129,196 @@ I have broad interests across all areas of cryptography, with my doctoral resear
   </style>
 </head>
 <body>
-  <div class="timeline">
-    <div class="section-title">
-      <br><h1>Peer-reviewed Publications & Talks</h1>
-    </div>
-    <!-- First Timeline Line -->
-    <div class="timeline-line line-top"></div>
-    <!-- Cryptography Section -->
+
+<div class="timeline">
+  <div class="section-title">
+    <h1>Peer-reviewed Publications &amp; Talks</h1>
+  </div>
+
+  <!-- ===== Cryptography Section ===== -->
+  <div class="timeline-section">
     <h3>Cryptography (authorship is alphabetical in cryptography and theory)</h3>
-    <!-- Timeline Item 2025 -->
+    <div class="timeline-line"></div>
+
+    <!-- 2025 -->
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2025</div>
         <div class="timeline-description">
-          <h3>Crypto, 2025 (Santa Barbara, CA)</h3>
-          <h4>Kolesnikov, V., Peceny, S., Raghuraman, S., Rindal, P.: 
-            <br><a href="https://eprint.iacr.org/2025/295.pdf" style="color: blue;">Stationary Syndrome Decoding for Improved PCGs</a>.
-          </h4>
-	   <h5>See the  <a href="https://iacr.org/submit/files/slides/2025/crypto/crypto2025/452/452_slides.pdf" style="color: blue;">slides</a> from my conference talk.</h5>
+          <h4>Crypto 2025 (Santa Barbara, CA)</h4>
+          <p>
+            Kolesnikov, V., Peceny, S., Raghuraman, S., Rindal, P.<br>
+            <a href="https://eprint.iacr.org/2025/295.pdf" style="color: blue;">Stationary Syndrome Decoding for Improved PCGs</a>
+          </p>
+          <p>
+            See the
+            <a href="https://iacr.org/submit/files/slides/2025/crypto/crypto2025/452/452_slides.pdf" style="color: blue;">slides</a>
+            from my conference talk.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2025 -->
+
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2025</div>
         <div class="timeline-description">
-          <h3>ASIACCS, 2025</h3>
-          <h4>Agarwal, A., Peceny, S., Raykova, M., Schoppmann, P., Seth, K.: 
-            <br><a href="https://eprint.iacr.org/2025/211.pdf" style="color: blue;">Prior-Based Label Differential Privacy via Secure Two-Party Computation</a>.
-          </h4>
-	  <h5>See the <a href="https://drive.google.com/file/d/1sYh4TtBgGxxvIiB-gN7PmbrmUqL5zJYx/view?usp=sharing" style="color: blue;">slides</a> from my conference talk (talk was not recorded).</h5>
+          <h4>ASIACCS 2025</h4>
+          <p>
+            Agarwal, A., Peceny, S., Raykova, M., Schoppmann, P., Seth, K.<br>
+            <a href="https://eprint.iacr.org/2025/211.pdf" style="color: blue;">Prior-Based Label Differential Privacy via Secure Two-Party Computation</a>
+          </p>
+          <p>
+            See the
+            <a href="https://drive.google.com/file/d/1sYh4TtBgGxxvIiB-gN7PmbrmUqL5zJYx/view?usp=sharing" style="color: blue;">slides</a>
+            from my conference talk (talk was not recorded).
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2025 -->
+
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2025</div>
         <div class="timeline-description">
-          <h3>Public Key Cryptography, 2025 (Roros, Norway)</h3>
-          <h4>Peceny, S., Raghuraman, S., Rindal, P., Shah, H.: 
-            <br><a href="https://eprint.iacr.org/2024/547.pdf" style="color: blue;">Efficient Permutation Correlations and Batched Random Access for Two-Party Computation</a>.
-          </h4>
-	  <h5>See my conference  <a href="https://www.youtube.com/watch?v=dnF1F7blsxY&list=PLeeS-3Ml-rpruYe5hXNYHeNMAPiwtOl7N&index=13" style="color: blue;">talk</a> (starting at minute 41) and the accompanying <a href="https://iacr.org/submit/files/slides/2025/pkc/pkc2025/157/157_slides.pdf" style="color: blue;">slides</a>.</h5>
+          <h4>Public Key Cryptography 2025 (Røros, Norway)</h4>
+          <p>
+            Peceny, S., Raghuraman, S., Rindal, P., Shah, H.<br>
+            <a href="https://eprint.iacr.org/2024/547.pdf" style="color: blue;">Efficient Permutation Correlations and Batched Random Access for Two-Party Computation</a>
+          </p>
+          <p>
+            See my conference
+            <a href="https://www.youtube.com/watch?v=dnF1F7blsxY&list=PLeeS-3Ml-rpruYe5hXNYHeNMAPiwtOl7N&index=13" style="color: blue;">talk</a>
+            (starting at minute 41) and the accompanying
+            <a href="https://iacr.org/submit/files/slides/2025/pkc/pkc2025/157/157_slides.pdf" style="color: blue;">slides</a>.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2024 -->
+
+    <!-- 2024 -->
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2024</div>
         <div class="timeline-description">
-          <h3>IEEE EuroS&P, 2024 (Vienna)</h3>
-          <h4>Agarwal, A., Peceny, S., Raykova, M., Schoppmann, P., Seth, K.: 
-            <br><a href="https://eprint.iacr.org/2022/866.pdf" style="color: blue;">Communication-Efficient Secure Logistic Regression</a>.
-          </h4>
+          <h4>IEEE EuroS&amp;P 2024 (Vienna)</h4>
+          <p>
+            Agarwal, A., Peceny, S., Raykova, M., Schoppmann, P., Seth, K.<br>
+            <a href="https://eprint.iacr.org/2022/866.pdf" style="color: blue;">Communication-Efficient Secure Logistic Regression</a>
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2023 -->
+
+    <!-- 2023 -->
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2023</div>
         <div class="timeline-description">
-          <h3>CSCML 2023 and extended version in Cryptography & Communications 2024</h3>
-          <h4>Kolesnikov, V., Peceny, S., Trieu, N., Wang, X.: 
-            <br><a href="https://eprint.iacr.org/2023/991.pdf" style="color: blue;">Fast ORAM with Server-aided Preprocessing and Pragmatic Privacy-Efficiency Trade-off</a>.
-          </h4>
-	  <h5>See the extended <a href="https://drive.google.com/file/d/1s1NU2S6Tovcl0KTMGU3-WmU9N4Lg_f3P/view?usp=sharing" style="color: blue;">slides</a> from my conference talk (talk was not recorded).</h5>
+          <h4>CSCML 2023; extended version in Cryptography &amp; Communications 2024</h4>
+          <p>
+            Kolesnikov, V., Peceny, S., Trieu, N., Wang, X.<br>
+            <a href="https://eprint.iacr.org/2023/991.pdf" style="color: blue;">Fast ORAM with Server-aided Preprocessing and Pragmatic Privacy-Efficiency Trade-off</a>
+          </p>
+          <p>
+            See the extended
+            <a href="https://drive.google.com/file/d/1s1NU2S6Tovcl0KTMGU3-WmU9N4Lg_f3P/view?usp=sharing" style="color: blue;">slides</a>
+            from my conference talk (talk was not recorded).
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2021 -->
+
+    <!-- 2021 -->
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2021</div>
         <div class="timeline-description">
-          <h3>Asiacrypt, 2021 (Singapore)</h3>
-          <h4>Heath, D., Kolesnikov, V., Peceny, S.: 
-            <br><a href="https://eprint.iacr.org/2021/1590.pdf" style="color: blue;">Garbling, Stacked and Staggered: Faster k-out-of-n Garbled Function Evaluation</a>.
-          </h4>
-          <h5>See my conference <a href="https://www.youtube.com/watch?v=QnVanTjaP8o&amp;t=1374s" style="color: blue;">talk</a>.</h5>
+          <h4>Asiacrypt 2021 (Singapore)</h4>
+          <p>
+            Heath, D., Kolesnikov, V., Peceny, S.<br>
+            <a href="https://eprint.iacr.org/2021/1590.pdf" style="color: blue;">Garbling, Stacked and Staggered: Faster k-out-of-n Garbled Function Evaluation</a>
+          </p>
+          <p>
+            See my conference
+            <a href="https://www.youtube.com/watch?v=QnVanTjaP8o&amp;t=1374s" style="color: blue;">talk</a>.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2021 -->
+
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2021</div>
         <div class="timeline-description">
-          <h3>Public Key Cryptography, 2021 (Edinburgh)</h3>
-          <h4>Heath, D., Kolesnikov, V., Peceny, S.: 
-            <br><a href="https://eprint.iacr.org/2021/604.pdf" style="color: blue;">Masked Triples: Amortizing Multiplication Triples across Conditionals</a>.
-          </h4>
-          <h5>See my conference <a href="https://www.youtube.com/watch?v=mZm2tMas-yc" style="color: blue;">talk</a>.</h5>
+          <h4>Public Key Cryptography 2021 (Edinburgh)</h4>
+          <p>
+            Heath, D., Kolesnikov, V., Peceny, S.<br>
+            <a href="https://eprint.iacr.org/2021/604.pdf" style="color: blue;">Masked Triples: Amortizing Multiplication Triples across Conditionals</a>
+          </p>
+          <p>
+            See my conference
+            <a href="https://www.youtube.com/watch?v=mZm2tMas-yc" style="color: blue;">talk</a>.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2020 -->
+
+    <!-- 2020 -->
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2020</div>
         <div class="timeline-description">
-          <h3>Asiacrypt, 2020 (Daejeon)</h3>
-          <h4>Heath, D., Kolesnikov, V., Peceny, S.: 
-            <br><a href="https://eprint.iacr.org/2020/1175.pdf" style="color: blue;">MOTIF: (Almost) Free Branching in GMW via Vector-Scalar Multiplication</a>.
-          </h4>
-          <h5>See my conference <a href="https://www.youtube.com/watch?v=nRIQclqfAAQ" style="color: blue;">talk</a>.</h5>
+          <h4>Asiacrypt 2020 (Daejeon)</h4>
+          <p>
+            Heath, D., Kolesnikov, V., Peceny, S.<br>
+            <a href="https://eprint.iacr.org/2020/1175.pdf" style="color: blue;">MOTIF: (Almost) Free Branching in GMW via Vector-Scalar Multiplication</a>
+          </p>
+          <p>
+            See my conference
+            <a href="https://www.youtube.com/watch?v=nRIQclqfAAQ" style="color: blue;">talk</a>.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Timeline Item 2018 -->
+
+    <!-- 2018 -->
     <div class="timeline-item">
       <div class="timeline-content">
         <div class="timeline-date">2018</div>
         <div class="timeline-description">
-          <h3>Financial Cryptography, 2018 (Curacao)</h3>
-          <h4>Boura, C., Chillotti, I., Gama, N., Jetchev, D., Peceny, S., Petric, A.: 
-            <br><a href="https://eprint.iacr.org/2017/1234.pdf" style="color: blue;">High-precision privacy-preserving real-valued function evaluation</a>.
-          </h4>
-        </div>
-      </div>
-    </div>
-    <!-- Cryptography & Security Section -->
-    <h3>Cryptography & Security</h3>
-    <!-- Second Timeline Line -->
-    <div class="timeline-line line-bottom"></div>
-    <!-- Timeline Item 2023 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <div class="timeline-date">2023</div>
-        <div class="timeline-description">
-          <h3>ACM CCS, 2023 (Copenhagen)</h3>		
-          <h4>Yang, Y., Peceny, S., Heath, D., Kolesnikov, V.: 
-            <br><a href="https://eprint.iacr.org/2023/953.pdf" style="color: blue;">Towards Generic MPC Compilers via Variable Instruction Set Architectures (VISAs)</a>.
-          </h4>
+          <h4>Financial Cryptography 2018 (Curaçao)</h4>
+          <p>
+            Boura, C., Chillotti, I., Gama, N., Jetchev, D., Peceny, S., Petric, A.<br>
+            <a href="https://eprint.iacr.org/2017/1234.pdf" style="color: blue;">High-precision privacy-preserving real-valued function evaluation</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- ===== Cryptography & Security Section ===== -->
+  <div class="timeline-section">
+    <h3>Cryptography &amp; Security</h3>
+    <div class="timeline-line"></div>
+
+    <!-- 2023 -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-description">
+          <h4>ACM CCS 2023 (Copenhagen)</h4>
+          <p>
+            Yang, Y., Peceny, S., Heath, D., Kolesnikov, V.<br>
+            <a href="https://eprint.iacr.org/2023/953.pdf" style="color: blue;">Towards Generic MPC Compilers via Variable Instruction Set Architectures (VISAs)</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </body>
 </html>	
 	
